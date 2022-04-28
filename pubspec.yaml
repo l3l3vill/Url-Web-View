@@ -1,0 +1,26 @@
+name: urlGems
+description: View and save a list of URLs for interesting websites
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.2
+
+  # dependency for WebView Plugin
+  webview_flutter: ^3.0.1
+dev_dependencies:
+  effective_dart: ^1.3.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    
+dependency_overrides:
+  platform: ^3.1.0

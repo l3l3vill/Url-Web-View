@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+
+<!--How this help page is comunicating with discoverpage ? -->
+<!--TODO: Display Invalid URL function -->
+function displayInvalidUrl(invalidUrl, validUrl) {
+    document.getElementById("invalid-url").innerHTML = "It looks like you routed to an invalid url: "
+    + invalidUrl + ", while you should keep browsing: " + validUrl;
+    document.getElementById("invalid-url").style.visibility = "visible";
+}
+
+
+function reloadUrl() {
+<!--TODO: Trigger reload url Flutter function -->
+}
+
+function routeToSavedWebsites() {
+<!--TODO: Trigger route to saved websites Flutter function -->
+}
+</script>
+</head>
+
+<body>
+<p id="invalid-url" style="visibility:hidden;"></p>
+<h1>How to use this application?</h1>
+<p>When you click on "I'm feeling lucky", you load a new website that you can discover. You can navigate within the website's own domain, however, you can't navigate outside the website. If you like the website, you can save it to discover it later.</p>
+
+<br/><br/>
+
+<button onclick="reloadUrl()">Discover a new website</button>
+
+<br/><br/>
+
+<button onclick="routeToSavedWebsites()">Check your saved websites</button>
+</body>
+</html>
